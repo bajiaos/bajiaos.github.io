@@ -1,0 +1,37 @@
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+baseurl: 
+url: http://mazhuang.org/jekyll-theme-solid
+date_format: "ordinal"
+title: jekyll-theme-solid
+author: Zhuang Ma 
+
+# ---------------- #
+#   RSS / Email    #
+# ---------------- #
+subscribe_rss: /feed.xml
+email:
+
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
+markdown: kramdown
+kramdown:
+    input: GFM
+paginate: 9
+permalink: /:year/:month/:day/:title/
+gems:
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
+
+# ---------------- #
+#      Comments    #
+# ---------------- #
+netease_gentie_key: 560ed243b708465d82d5a0a5f3b83da1

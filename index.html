@@ -1,10 +1,15 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<title>git</title>
-</head>
-<body>
-	this is my first git project!!!thank you
-</body>
-</html>
+---
+layout: default
+description: Zhuang Ma's Blog
+keywords: Zhuang Ma, 马壮, mzlogin, mazhuang
+---
+
+<div class="postlist">
+    {% for post in paginator.posts %}
+    <div class="overview">
+        <div class="date">{{ post.date | date: "%b %d, %Y" }}</div>
+        <div class="detail"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></div>
+    </div>
+    {% endfor %}
+</div>
+{% include pagination.html %}
